@@ -4,11 +4,11 @@ import argparse
 
 parser = argparse.ArgumentParser(description="Description", usage="My Bomb")
 parser.add_argument('-u','--URL',dest="URL", help="The target URL ",required=True)
-parser.add_argument('-U','--Username',dest="Username",help="The username dict to use",required=False)
-parser.add_argument('-P','--Password',dest="Password",help="The password dict to use",required=False)
-parser.add_argument('-C','--Cookie',dest="Cookie",help="The header cookie to use",required=False)
-parser.add_argument('-H','--Host',dest="Host",help="The header host to use",required=False)
-parser.add_argument('-R','--Referer',dest="Referer",help="The header referer to use",required=False)
+parser.add_argument('-U','--Username',dest="Username",help="The username dict to use",required=True)
+parser.add_argument('-P','--Password',dest="Password",help="The password dict to use",required=True)
+parser.add_argument('-C','--Cookie',dest="Cookie",help="The header cookie to use",required=True)
+parser.add_argument('-H','--Host',dest="Host",help="The header host to use",required=True)
+parser.add_argument('-R','--Referer',dest="Referer",help="The header referer to use",required=True)
 args = parser.parse_args()
 params = vars(args)
 login={'Username':'','Password':''}
