@@ -64,3 +64,4 @@ def FindPassword(Username):
 if __name__ == "__main__":
 	FindUsername()
 	FindPassword(login['Username'])
+	print "The username is %s and the password is %s !" %(login=['Username'],login['Password'])
